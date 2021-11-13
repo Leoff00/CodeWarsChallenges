@@ -17,7 +17,7 @@ console.log(uniqueInOrder1([1, 2, 3, 4, 4, 4, 2])); // output: [ 1, 2, 3, 4 ]
 
 function uniqueInOrder2(iterable) {
   return typeof iterable === "object"
-    ? iterable.sort((a, b) => a - b).filter((v, i, this) => a[i] !== a[i + 1])
+    ? iterable.sort((a, b) => a - b).filter((v, i, a) => a[i] !== a[i + 1])
     : iterable
         .split("")
         .filter((v, i, a) => a[i] !== a[i + 1])
