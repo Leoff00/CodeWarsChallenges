@@ -6,5 +6,5 @@ function isIsogram(str) {
 }
 
 console.log(isIsogram(""));
-console.log(isIsogram("aabcdefgh"));
 console.log(isIsogram("Ana"));
+console.log(isIsogram("Paz"));
